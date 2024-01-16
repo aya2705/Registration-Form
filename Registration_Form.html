@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registration Form</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body class="body-background">
+    
+        <div class="container">
+          <form  action="connect.php" method="POST" id="signup" class="form">
+                <h1>Registration Form</h1>
+              <div class="form-field">
+                    <label for="username">Your Username</label>
+                    <input type="text" id="username" name="username" autocomplete="off" placeholder="Username">
+                    <small></small>
+              </div>
+              <div class="form-field">
+                    <label for="email">Your email</label>
+                    <input type="email" id="email" name="email" autocomplete="off" placeholder="Your Email"><br>
+                    <small></small>
+              </div>
+              <div class="form-field">
+                    <label for="password">Your password</label>
+                    <input type="password" id="password" name="password" autocomplete="off" placeholder="Password"><br>
+                    <small></small>
+              </div>
+              <div class="form-field">
+                    <label for="confirm-password">Repeat the password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" autocomplete="off" placeholder="Repeat Password"><br>
+                    <small></small>
+              </div>
+              <div class="age">
+                  <label for="age">Your Age<input type="number" name="age" min="0" ></label>
+              </div>
+              
+              <footer>
+                 <label></label><input type="checkbox">By creating an account, you agree to <a href="#">the Terms of Service</a></label>
+                  </footer>
+              <div class="footer">
+                  <button onclick="goToAnotherPage()" type="submit" class="btn-signup" name="envoyer">Sign Up</button></a>
+              </div>
+         </form>
+        </div>
+        
+        <script src="script.js"></script>
+    </body>
+
+</html>
