@@ -1,9 +1,55 @@
-const usernameEl = document.querySelector('#username');
-const emailEl = document.querySelector('#email');
-const passwordEl = document.querySelector('#password');
-const confirmPasswordEl = document.querySelector('#confirm-password');
+const usernameEl = document.getElementById('username');
+const password = document.getElementById('password');
+const pass1=document.getElementById('confirm-pass')
+const form=document.getElementById('form');
+const errorMessage=document.getElementById('error');
+const err1=document.getElementById('err');
+const errorPass=document.getElementById('passError');
 
-const form = document.querySelector('#signup');
+form.addEventListener('submit',(e) =>{
+  let message=[];
+  if(usernameEl.value==='' || usernameEl.value==null){
+    message.push('Name is required')
+  }
+  if(message.length>0){
+
+    e.preventDefault();
+    errorMessage.innerText=message.join(', ');
+  }
+
+   
+
+})
+
+form.addEventListener('submit',(e)=>{
+  let mes=[];
+  if(password.value==='' || password.value.length<=6){
+    mes.push('password must be at least 6 characters ');
+  }
+  if(mes.length>0){
+    err1.innerText=mes.join(',');
+  }
+  let erreur=[];
+  if(password.value!==pass1.value){
+    erreur.push("Password doesn't match");
+  }
+  if(erreur.length>0){
+    errorPass.innerText=erreur.join(', ');
+  }
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 const checkUsername = () => {
