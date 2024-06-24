@@ -17,7 +17,7 @@ Ce projet est une simple page de formulaire de connexion réalisée avec HTML, C
 2. Accédez au répertoire du projet :
    ```bash
     cd Registration-Form
-## 🕹️ Personnalisation
+## 🎨 Personnalisation
 Vous pouvez modifier les fichiers CSS et JavaScript pour personnaliser l'apparence et les fonctionnalités du formulaire selon vos besoins.
 
 ## 🤝 Contribution
